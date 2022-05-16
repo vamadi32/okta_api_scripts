@@ -1,14 +1,14 @@
 #!/bin/sh
 api_token=""
 domain=""
-apiuser="" 
-apipass=""
+apiuser_jamf="" 
+apipass_jamf=""
 jssURL=""
 
 
 token_auth(){
 # created base64-encoded credentials
-encoded=$( printf "${apiuser}:${apipass}" | /usr/bin/iconv -t ISO-8859-1 | /usr/bin/base64 -i -)
+encoded=$( printf "${apiuser_jamf}:${apipass_jamf}" | /usr/bin/iconv -t ISO-8859-1 | /usr/bin/base64 -i -)
 
 curlCmd="/usr/bin/curl --silent --show-error"
 url="${jssURL}/api/v1/auth/token"
