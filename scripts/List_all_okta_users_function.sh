@@ -1,6 +1,6 @@
 #!/bin/sh
-api_token="00mLEDAwt2HdInZVboJcPJOxFK3TdMMuz5hY_oFHLw"
-domain="traderepublic.okta.com"
+api_token=""
+domain=""
 
 get_all_function(){
     curl -s -X GET \
